@@ -33,6 +33,7 @@ import {
 } from "@/components/ui/context-menu";
 import { QueryFailure, QuerySuccess } from "fauna";
 import { RemoveConnectionButton } from "../remove-connection-button";
+import { FQL_DOCS } from "@/constants";
 
 type Tab = {
   id: string;
@@ -488,7 +489,9 @@ export function Playground({
                     Run a FQL query to see the results here
                   </h3>
                   <a
-                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={FQL_DOCS}
                     className="text-indigo-600 font-medium hover:underline w-fit"
                   >
                     Check the docs
