@@ -1,0 +1,28 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.language-fql {
+  @apply text-teal-600;
+}
+
+.token.literal-property {
+  @apply text-slate-900;
+}
+
+.token.punctuation,
+.token.operator {
+  @apply text-slate-400;
+}
+
+.token.function {
+  @apply text-indigo-600;
+}
+
+.token.string,
+.token.number {
+  @apply text-pink-600;
+}
