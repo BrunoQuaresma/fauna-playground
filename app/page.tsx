@@ -6,12 +6,6 @@ import { getCurrentConnection } from "@/lib/connection";
 import { redirect } from "next/navigation";
 import { BRUNO_TWITTER, GITHUB_REPO } from "@/constants";
 
-export const metadata: Metadata = {
-  title: "Perfect Reddit Screenshots - RedditPik",
-  description:
-    "RedditPik is a simple tool that makes it easy to capture and share professional screenshots of Reddit posts and comments.",
-};
-
 export default async function Home() {
   const currentConnection = getCurrentConnection();
   if (currentConnection) {
